@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body { background: linear-gradient(#2c4a64, #0179e9); }
+/*
+background-image: url(../images/fond.jpg); 
+	background-size: cover; width: 100%; height: 1400px;
+	background-repeat: no-repeat; 
+*/
+
+main { width: 80%; height: 1250px; z-index: -1;
+	background-color: white; margin: 15% auto; }
+
+header { position: sticky; top: 0; z-index: 1;}
+
+nav { width: 100%; background-color: grey; float: left;  }
+
+ul { width: 100%; display: flex; justify-content: space-between; }
+
+li { width: 100%; padding: 25% 15%; 
+	display: inline-block; background-repeat: no-repeat; }
+
+#une { background-image: url(../images/imageune.jpeg); }
+#deux { background-image: url(../images/imagedeux.jpeg); }
+#trois { background-image: url(../images/imagetrois.jpeg); }
+#quatre { background-image: url(../images/imagequatre.jpeg); }
+
+section { width: 100%; height: 900px; float: left; 
+	position: relative; top: 0; left: 0; }
+
+#gdephoto { width: 100%; height: 400px;
+	background-image: url(../images/Chamonix.jpg);
+	background-size: cover;
+	background-repeat: no-repeat; 
+	padding: 5% 0;}
+
+figure img { width: 37.5%; height: auto; float: left; 
+	margin: 5.5% 2.5% 3% 5%; }
+
+a, h1, p { text-align: center; font-family: Arial; width: 100%;
+	text-decoration: none; color: black; }
+
+nav a { color: white; }
+
+p { font-size: 1.125em; text-align: left; padding: 5% 5% 1% 5%; }
+
+#gdephoto a { display: block; height: 65px; width: 200px;
+	margin: 0 auto; background-color: #efefef; padding: 2.5%;
+	color: black; border: 1px solid #a5a5a5; border-radius: 4px;}
+
+a:hover { color: orange; }
+
+
+/* mobile */
+@media (max-width: 799px) {
+	.maxmin { min-height: 90px; max-height: 120px; }
+	a { font-size: 0.8em; }
+	section {  }
+	h1 { margin: 5% auto; font-size: 1.3em }  
+}
+
+/* PC */
+@media (min-width: 800px){
+ 	.maxmin { min-height: 120px; max-height: 120px; }
+	a { font-size: 1em; }
+	section {  }
+	h1 { margin: 5% auto; font-size: 1.3em }
+	#gdephoto { max-width: 800px; min-width: 100%;}	 
+}
+
+
+
+
+
+ 
+
+
+
+
+
